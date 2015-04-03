@@ -14,7 +14,7 @@ def get_palindromes(size)
 	palindromes.last
 end
 
-get_palindromes(3)
+puts get_palindromes(3)
 
 # Benchmark:
 # 0.080000   0.010000   0.090000 (  0.088290)
