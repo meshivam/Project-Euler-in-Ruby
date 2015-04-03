@@ -19,7 +19,7 @@ end
 
 ah = (2..20).map{ |a| prime_factors(a) }
 merged = ah.inject({}) { |aggregate, hash| aggregate.merge(hash) { |k, o, n| [o,n].max }}
-merged.map{ |k,v| k**v }.reduce(1, :*)
+puts merged.map{ |k,v| k**v }.reduce(1, :*)
 
 # Benchmark:
 # 0.000000   0.000000   0.000000 (  0.001430)
