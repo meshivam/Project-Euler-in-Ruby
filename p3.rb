@@ -5,9 +5,8 @@
 
 require 'prime'
 
-# (1..600851475143).find_all { |a| a if a.prime? && 13195 % a == 0 }.last # terrible solution will take ages
-
 # Using slightly modified Fermat's factorization method.
+# Read More http://en.wikipedia.org/wiki/Fermat%27s_factorization_method
 def fermet_factor_max(n)
 	t=(Math.sqrt(n)+1).floor
 	k=0
@@ -30,7 +29,7 @@ def fermet_factor_max(n)
 	prime_numbers
 end
 
-fermet_factor_max(600851475143).max
+puts fermet_factor_max(600851475143).max
 
 # Benchmark:
 # 0.100000   0.000000   0.100000 (  0.104012)
