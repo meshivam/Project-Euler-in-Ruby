@@ -7,7 +7,7 @@
 def fib(max)
 	a = []
 	i = 0
-	while (true) do
+	while true do
 		if i == 0 || i == 1
 			a[i] = 1
 		else
@@ -20,7 +20,7 @@ def fib(max)
 	a[1..-1]
 end
 
-fib(4000000).find_all(&:even?).sum
+puts fib(4000000).find_all(&:even?).reduce(0, :+)
 
 # Benchmark:
 # 0.000000   0.000000   0.000000 (  0.000104) 
