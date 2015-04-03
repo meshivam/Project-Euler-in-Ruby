@@ -10,7 +10,7 @@ while true
 	count += 1 if pn.prime?
 	break if count == 10001
 end
-pn
+puts pn
 
 # Benchmark:
 # 1.200000   0.000000   1.200000 (  1.201821)

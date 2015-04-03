@@ -12,7 +12,7 @@ product = nil
 	}
 	break if flag
 }
-product
+puts product
 
 # Benchmark:
 # 0.060000   0.000000   0.060000 (  0.060482)

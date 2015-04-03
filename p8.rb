@@ -9,7 +9,7 @@ a = {}
 	a[t] = t.chars.map(&:to_i).reduce(1, :*) if !t.include?("0")
 end
 
-a.values.max
+puts a.values.max
 
 # Benchmark:
 # 0.000000   0.000000   0.000000 (  0.004598)
